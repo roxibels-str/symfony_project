@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<main>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+        <h2>Home</h2>
+      </a>
+    </header>
+
+   
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <a class="btn btn-outline-light" href="{{ path('app_dashboard') }}"  type="button">Get Started</a>
+      
+        </div>
+      </div>
+     
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2024
+    </footer>
+  </div>
+</main>
+{% endblock %}
+
