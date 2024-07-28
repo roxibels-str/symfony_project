@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DashboardController!{% endblock %}
+{% block title %}Dashboard{% endblock %}
 
 {% block body %}
 <style>
@@ -8,13 +8,29 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<main>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+        <h2>Dashboard</h2>
+      </a>
+    </header>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>D:/Program Files/xamp/htdocs/symfony_practice/src/Controller/DashboardController.php</code></li>
-        <li>Your template at <code>D:/Program Files/xamp/htdocs/symfony_practice/templates/dashboard/index.html.twig</code></li>
-    </ul>
-</div>
+   
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Project System</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <a class="btn btn-outline-light" href="{{ path('app_project_index') }}"  type="button">Click Here</a>
+      
+        </div>
+      </div>
+     
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2024
+    </footer>
+  </div>
+</main>
 {% endblock %}
